@@ -1,9 +1,9 @@
-1) 1996 The Rock
-2) 1996 Broken Arrow
-3) 1997 The Peacemaker
-4) 1999 Chill Factor
-5) 2000 Gladiator
-6) 2001 Pearl Harbor
+1996 The Rock
+1996 Broken Arrow
+1997 The Peacemaker
+1999 Chill Factor
+2000 Gladiator
+2001 Pearl Harbor
 2001 Hannibal
 2002 The Ring
 2003 The Last Samurai
