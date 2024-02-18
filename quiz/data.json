@@ -1,0 +1,56 @@
+{
+  "comment1": "Cada tema carrega varias perguntas. A resposta correta para a cada pergunta é a primeira posição da array respostas.",
+  "temas": [
+    {
+      "name": "Frozen",
+      "perguntas": [
+        {
+          "texto": "Qual o nome do boneco de neve?",
+          "respostas": ["Olaf", "joao", "pedro"]
+        },
+        {
+          "texto": "Qual o nome da cidade?",
+          "respostas": ["Arendelle", "maria", "antonia"]
+        },
+        {
+          "texto": "Qual o nome da irmã que vira rainha?",
+          "respostas": ["Ana", "Fernanda", "Antonia"]
+        }
+      ]
+    },
+    {
+      "name": "PJ Masks",
+      "perguntas": [
+        {
+          "texto": "Qual o nome da corujita?",
+          "respostas": ["Amaya", "Sandra", "Manuela"]
+        },
+        {
+          "texto": "Qual o nome do menino gato?",
+          "respostas": ["Greg", "Lucas", "Pedro"]
+        },
+        {
+          "texto": "Qual o nome do lagartixo?",
+          "respostas": ["Connor", "Marcio", "Linus"]
+        }
+      ]
+    },
+    {
+      "name": "Morphle",
+      "perguntas": [
+        {
+          "texto": "Qual o nome da dona do morphle?",
+          "respostas": ["Mila", "joana", "adriana"]
+        },
+        {
+          "texto": "Qual o nome do vilão verde?",
+          "respostas": ["Orphle", "lorphle", "corphle"]
+        },
+        {
+          "texto": "Qual a cor da roupa da Mila?",
+          "respostas": ["Azul", "Verde", "Amarela"]
+        }
+      ]
+    }
+  ]
+}
