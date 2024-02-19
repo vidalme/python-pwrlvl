@@ -14,7 +14,7 @@ def open_message():
     print("***************************************")
 
 def load_temas(data):    
-    with open(data,'r') as dt:
+    with open(data,'r',encoding='utf8') as dt:
         dt = json.load(dt)
         return dt['temas']
 
@@ -46,9 +46,9 @@ def escolhe_tema(tms):
         letras+=1
 
 def fim_jogo():
-    print('fim de jogo')
-    print('pressione Q para sair')
-    print('pressione A para jogar de novo')
+    print('Fim da Partida')
+    print('( A ) jogar de novo')
+    print('( Q ) para sair')
     inp = input('')
     if(inp.upper() == "A"):
         start_game()
@@ -76,6 +76,7 @@ def main_game(tema):
         perguntas.append(perg['texto'])
         respostas.append(perg['respostas'])
     
+    #texto de inicio da partida
     print(f"Vamos testar seu conhecimento em ### {name} ###!!")
         
     #loop da partida é aqui
@@ -93,7 +94,7 @@ def main_game(tema):
 
         #salva a reposta correta antes de randomizar a ordem das respostas
         resposta_correta = respostas[ale][0].upper()
-        print(f"a resposta correta é: {resposta_correta}")
+        #print(f"a resposta correta é: {resposta_correta}")
 
         #randomiza a ordem que as respostas vao ser displayed
         random.shuffle(respostas[ale])
@@ -108,9 +109,12 @@ def main_game(tema):
         #se resposta for correta ganha pontos e uma mensagem de parabens
         if (resposta_player == resposta_correta):
             pontuacao += 1
+            print('')
             print(f'Acertouuuu!!!!!')
             print(f'Voce tem um total de {pontuacao} estrela(s)!') 
+            print('')
             print(f'{estrela*pontuacao}')
+            print('')
         else:
             print('voce errou')
         

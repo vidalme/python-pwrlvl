@@ -22,16 +22,26 @@
       "name": "PJ Masks",
       "perguntas": [
         {
-          "texto": "Qual o nome da corujita?",
-          "respostas": ["Amaya", "Sandra", "Manuela"]
+          "texto": "Qual é o nome do menino que se transforma em Gato-Noturno?",
+          "respostas": ["Connor", "Pedro", "Greg", "Luis", "Tobias"]
         },
         {
-          "texto": "Qual o nome do menino gato?",
-          "respostas": ["Greg", "Lucas", "Pedro"]
+          "texto": "Qual é o nome da menina que se transforma em Corujita?",
+          "respostas": ["Amaya", "Ana", "Sofia", "Amélia", "Roberta"]
         },
         {
-          "texto": "Qual o nome do lagartixo?",
-          "respostas": ["Connor", "Marcio", "Linus"]
+          "texto": "Quem é o vilão principal em PJ Masks",
+          "respostas": [
+            "Romeo",
+            "Dr. Roubaladrão",
+            "Lobo Mau",
+            "Coruja Maligna",
+            "Fernadinho beira-mar"
+          ]
+        },
+        {
+          "texto": "O que Corujita usa para voar?",
+          "respostas": ["Capa", "Helicóptero", "Foguete", "Asas", "Avião"]
         }
       ]
     },
