@@ -37,6 +37,7 @@ class Player(pygame.sprite.Sprite):
             self.player_index += 0.1
             if self.player_index >= len(self.player_walk): self.player_index=0
             self.image = self.player_walk[int(self.player_index)]
+
     def update(self):
         self.player_input()
         self.apply_gravity()
@@ -118,7 +119,6 @@ def player_animation():
         player_index += 0.1
         if player_index >= len(player_walk):player_index = 0
         player_surf = player_walk[int(player_index)]
-
     
 pygame.init()
 screen = pygame.display.set_mode((800,400))
@@ -145,7 +145,6 @@ player.add(Player())
 obstacle_group = pygame.sprite.Group()
 # obstacle_group.add(Obstacle())
 
-
 sky_surface = pygame.image.load('graphics/Sky.png').convert()
 ground_surface = pygame.image.load('graphics/ground.png').convert()
 
@@ -171,7 +170,6 @@ player_walk_2 = pygame.image.load('graphics/player/player_walk_2.png').convert_a
 player_walk = [ player_walk_1 , player_walk_2 ]
 player_index = 0
 player_jump = pygame.image.load('graphics/player/jump.png').convert_alpha()
-
 
 player_surf = player_walk[player_index]
 player_rect = player_surf.get_rect(midbottom = (80,300))
@@ -235,13 +233,11 @@ while True:
                 else: fly_frame_index = 0
                 fly_surf = fly_frames[fly_frame_index]
 
-        
         else:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     game_active = True
                     start_time = pygame.time.get_ticks() 
-
         
     if game_active:
         screen.blit(sky_surface,(0,0))
