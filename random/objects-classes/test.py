@@ -1,11 +1,10 @@
-def addf(a,b):
-    return a+b
+class O:
+    def __init__(self,a):
+        self.a = a
 
-class Test:
-    def __init__(self,som_fun):
-        self.funs = som_fun
+a = O('andre')
+print(a.a)
+b = O('bete')
+print(b.a)
 
-
-testing = Test(addf)
-
-print(testing.funs(2,2))
+# print(o.a)
